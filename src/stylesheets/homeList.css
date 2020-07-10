@@ -1,0 +1,129 @@
+
+#homeSearch {
+  background-image: url("../images/search50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeAotm {
+  background-image: url("../images/aotm50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeBookmarks {
+  background-image: url("../images/bookmark50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homePlaylist {
+  background-image: url("../images/list50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeSavedPlaylists {
+  background-image: url("../images/lists50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeDownloads {
+  background-image: url("../images/downloads50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeNowPlaying {
+  background-image: url("../images/nowPlaying50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeNowPlayingList {
+  background-image: url("../images/listNowPlaying50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeArtist {
+  background-image: url("../images/artist50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeAlbum {
+  background-image: url("../images/album50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeSong {
+  background-image: url("../images/song50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeGenre {
+  background-image: url("../images/genre50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#randomPlay{
+  background-image: url("../images/random50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeRecentArtists{
+  background-image: url("../images/artistRecent50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeRecentAlbums{
+  background-image: url("../images/albumsRecent50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}
+#homeRecentSongs{
+  background-image: url("../images/songsRecent50px.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: transparent;
+  height: 50px;
+}

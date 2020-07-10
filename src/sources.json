@@ -1,0 +1,111 @@
+[
+    {"source": "/usr/palm/frameworks/media/media.js"},
+    {"source": "/usr/palm/frameworks/media/Audio.js"},
+    {"source": "app/assistants/app-assistant.js"},
+    {"source": "app/assistants/stage-assistant.js"},
+    {"source": "app/assistants/audioPlayer.js"},
+    {
+        "scenes": "login",
+        "source": "app/assistants/login-assistant.js"
+    },
+    {
+        "scenes": "search",
+        "source": "app/assistants/search-assistant.js"
+    },
+    {
+        "scenes": "artist",
+        "source": "app/assistants/artist-assistant.js"
+    },
+    {
+        "scenes": "albums",
+        "source": "app/assistants/albums-assistant.js"
+    },
+    {
+        "scenes": "songs",
+        "source": "app/assistants/songs-assistant.js"
+    },
+    {
+        "scenes": "videos",
+        "source": "app/assistants/videos-assistant.js"
+    },
+    {
+        "scenes": "account",
+        "source": "app/assistants/account-assistant.js"
+    },
+    {
+        "scenes": "accounts",
+        "source": "app/assistants/accounts-assistant.js"
+    },
+    {
+        "scenes": "stream",
+        "source": "app/assistants/stream-assistant.js"
+    },
+    {
+        "scenes": "playlist",
+        "source": "app/assistants/playlist-assistant.js"
+    },
+    {
+        "scenes": "downloads",
+        "source": "app/assistants/downloads-assistant.js"
+    },
+    {
+        "scenes": "dlScene",
+        "source": "app/assistants/dlScene-assistant.js"
+    },
+    {
+        "scenes": "dlListAdd",
+        "source": "app/assistants/dlListAdd-assistant.js"
+    },
+    {
+        "scenes": "urlAdd",
+        "source": "app/assistants/urlAdd-assistant.js"
+    },
+    {
+        "scenes": "savedPlaylists",
+        "source": "app/assistants/savedPlaylists-assistant.js"
+    },
+    {
+        "scenes": "savedPlaylist",
+        "source": "app/assistants/savedPlaylist-assistant.js"
+    },
+    {
+        "scenes": "playlistAdd",
+        "source": "app/assistants/playlistAdd-assistant.js"
+    },
+    {
+        "scenes": "listAll",
+        "source": "app/assistants/listAll-assistant.js"
+    },
+    {
+        "scenes": "whatsNew",
+        "source": "app/assistants/whatsNew-assistant.js"
+    },
+    {
+        "scenes": "info",
+        "source": "app/assistants/info-assistant.js"
+    },
+    {
+        "scenes": "tags",
+        "source": "app/assistants/tags-assistant.js"
+    },
+    {
+        "scenes": "nowPlayingList",
+        "source": "app/assistants/nowPlayingList-assistant.js"
+    },
+    {
+        "scenes": "playerDashboard",
+        "source": "app/assistants/playerDashboard-assistant.js"
+    },
+    {
+        "scenes": "bookmarks",
+        "source": "app/assistants/bookmarks-assistant.js"
+    },
+    {
+        "scenes": "aotm",
+        "source": "app/assistants/aotm-assistant.js"
+    },
+    {
+        "scenes": "help",
+        "source": "app/assistants/help-assistant.js"
+    }
+]

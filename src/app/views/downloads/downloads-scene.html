@@ -1,0 +1,43 @@
+<div id=sceneStyle>
+<div id='scrimSpinner' class="palm-scrim" style="display:none;"><center><div id="spinner" x-mojo-element="Spinner"></div></center></div>	
+<div id=listBorder style="
+-webkit-border-radius: 20px;
+border: 2px 
+solid #fff;
+padding: 5px;
+height: 437px;">
+<div id = 'pillBeGone'>
+<div class="palm-header center"><div id="spinnerSmall" x-mojo-element="Spinner"></div>
+    <div class="palm-header-wrapper">
+<div class="smallText" id=headerText></div>
+    </div>
+</div>
+</div>
+<div class="pill" id="pill">
+	<div x-mojo-element="ProgressPill" id="downloadProgressPill"></div>	
+ </div>
+<div class="myHeaderSpacer"></div>
+<div id='instructions' align='center' style="display:none;">
+	Add some songs to a playlist<br />
+	by swiping the lists of the <br />
+	songs/albums/artists scenes,<br />
+	or by adding a custom URL.<br />
+	Then come back here and press<br />
+	the icon with the disk and arrow.<br />
+	<b>Do not back gesture</b> until<br />
+	all the downloads are completed.<br />
+	All files not downloaded will be<br /> 
+	canceled until you restart them.
+<br /><br /><br />
+</div>	
+<div id="listDL">
+	<div class="palm-list">
+		<div class="palm-row single">
+    		<div x-mojo-element="Scroller" id="scrollerId" style="height: 348px;">	
+    			<div class="palm-list">
+					<div id="listDownloads" x-mojo-element="List"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

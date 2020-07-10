@@ -1,0 +1,64 @@
+<div id=sceneStyle>
+<div id='scrimSpinner' class="palm-scrim" style="display:none;"><center><div id="spinner" x-mojo-element="Spinner"></div></center></div>	
+<div id=listBorder style="
+-webkit-border-radius: 20px;
+border: 2px 
+solid #fff;
+padding: 5px;
+height: 437px;">
+<div class="palm-header center">
+    <div class="palm-header-wrapper">
+		<table width="100%" cellpadding="0" cellspacing="0" class=tbl>  
+		<tr>
+			<td width=15%>
+				<div id='scrim' class="palm-scrim" style="display:none;"></div>
+				<div id="albumArt" align=left style="padding-top: 7px"></div>
+			</td>
+			<td width=70%>
+				<div class="largeText truncating-text" id=song align=center style="padding-bottom: 8px"></div>
+			</td> 
+			<td width=15%>
+				<div class="smallText" id=listInfo align=right style="padding-bottom: 8px"></div>
+			</td> 
+		</tr>
+		</table>
+    </div>
+</div>
+<div class="myHeaderSpacer"></div>
+	<div class="palm-list">
+		<div class="palm-row single">
+    		<div x-mojo-element="Scroller" id="scrollerId" style="height: 348px;">	
+<!--<div x-mojo-element="ProgressSlider" id="streamSlider"></div>	-->
+<div id="storyListScene" class="storyListScene">		
+    	<div class="palm-list">
+			<div id="listNowPlaying" x-mojo-element="List"></div>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+
+<center>
+<div id=error align=center class='smallText'></div>
+<table width="100%" cellpadding="0" cellspacing="0" class="tbl2" border=0>
+<tr>
+	<td align="left" width=70px><div id="duration" align="center" class="mediumText"></div></td>
+	<td align="center" width=70px><div id=downloadStatus align=center class='xsmallText truncating-text'></div></td>
+	<td align="right" width=70px><div id="timer" align="center" class="mediumText"></div></td>
+</tr>
+<tr>
+	<td></td>
+	<td align=center><div id=artistCaching align=center class='xsmallText truncating-text'></div></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td><div id=percentage align=center class='xsmallText truncating-text'></div></td>
+	<td></td>
+</tr>
+<tr>
+	<td><div id=rating align=center class='xsmallText truncating-text'></div></td>
+</tr>
+</table>
+</center>	
+</div>

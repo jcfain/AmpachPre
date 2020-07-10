@@ -1,0 +1,9 @@
+{
+	"id": "net.nucleardecay.ampachpre",
+	"version": "2.1.5",
+	"vendor": "Jason C. Fain",
+	"type": "web",
+	"main": "index.html",
+	"title": "AmpachPre",
+	"icon": "icon.png"
+}

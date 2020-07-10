@@ -1,0 +1,328 @@
+p.bluetext {color:blue}
+
+/*
+@font-face {
+font-family: 'ChanceryCursive';
+src: url('chancur.eot');
+}
+#homeHeader{
+	font-family: "ChanceryCursive";
+	font-size: xx-large;
+	color: white;
+	padding-top: 20px;
+}
+*/
+.my-group {
+	border-style: inset;
+  	margin: 7px;                                          
+ 	border-width: 5px 5px 5px 5px;
+}
+#singleBorder  {
+border:1px;
+border-top-style: solid;
+border-bottom-style: solid;
+border-color: white;
+}
+
+#homeHeader {
+	padding-top:68px; 
+	background-image: url("../images/AmpachPreHeader.png");
+}
+
+#rowColor  {
+border-color: blue;
+}
+body.palm-default .scene-background2 {
+  background-color: black;
+  color: white;
+  height: 480px;
+}
+.accountsTitle {
+  background-color: grey;
+}
+#name{
+	color: white;
+}
+
+#sceneStyle {
+  background-image: url("../images/ampachpre-blue.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: #000;
+  color: white;
+  height: 480px;
+}
+#sceneStyleNP {
+  background-image: url("");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: #000;
+  color: white;
+  height: 480px;
+}
+body.palm-default .scene-background {
+  background-image: url("../images/ampachpre-blue.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: #000;
+  color: #fff;
+  height: 480px;
+}
+body.palm-default .splash-background {
+  background-image: url("../images/ampachpre-splash2.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-color: #000;
+  color: #fff;
+  height: 480px;
+}
+body.palm-default .prefs-background {
+  background-color: black;
+  color: white;
+  height: 480px;
+}
+.loading-spinner {
+  position: relative;
+}
+.streamer {
+  width: 150px;
+  position: absolute;
+}
+.prebuffer {
+  width: 150px;
+}
+.textFieldHalf{
+	width: 160px;
+  	float: right;  
+  	position: absolute;
+}
+.addFavs {
+/*
+	background:url(../images/eclipse_arrow_gloss2.png);
+	background-repeat: no-repeat; 
+*/
+	height:35px;
+/*
+	width:71px;
+*/
+	padding-top:8px;
+	border-width:0px 0px 0px 0px;
+	float:right;
+}
+.addFavs2 {
+/*
+	background:url(../images/task-details-button.png);
+	background-repeat: no-repeat; 
+	background-position: right;
+*/
+	height:42px;
+	border-width:0px 30px 0px 0px;
+	position:relative;
+	right:-10px;
+}
+.listImage{
+	padding-top:4px;
+	padding-bottom:11px;
+	margin: 0 2px 0 0;
+	float:left;
+}
+.listTitle{
+	font-size:large;
+	overflow:hidden;
+	white-space:nowrap;
+	padding-top:2px;
+	width: 79%;
+}
+.listInfo {
+	font-size:x-small;
+	overflow:hidden;
+	white-space:nowrap;
+	padding-left:5%; 
+	padding-top:5px; 
+}
+.floatRight{
+	float:right;
+}
+.floatLeft{
+	float:left;
+}
+.floatInherit{
+	float: inherit;
+}
+.floatNone{
+	float: none;
+}
+.palm-menu-icon.pause { background-image: url(../images/pause.png); }
+.palm-menu-icon.play { background-image: url(../images/play.png); }
+.palm-menu-icon.disabledPlay { background-image: url(../images/disabled.png); }
+.palm-menu-icon.standard { background-image: url(../images/standard.png); }
+.palm-menu-icon.repeatSong { background-image: url(../images/repeatSong.png); }
+.palm-menu-icon.repeatAll { background-image: url(../images/repeatAll.png); }
+.palm-menu-icon.random { background-image: url(../images/random.png); }
+.palm-menu-icon.standardDisabled { background-image: url(../images/standardDisabled.png); }
+.palm-menu-icon.pauseDisabled { background-image: url(../images/pauseDisabled.png); }
+.palm-menu-icon.downloads { background-image: url(../images/downloads.png); }
+.palm-menu-icon.list { background-image: url(../images/list.png); }
+.palm-menu-icon.search { background-image: url(../images/search.png); }
+.palm-menu-icon.www { background-image: url(../images/www.png); }
+.palm-menu-icon.lists { background-image: url(../images/lists.png); }
+.cancelDownload { background-image: url(../images/cancelDownload.png); background-repeat: no-repeat; background-position: center;}
+.palm-menu-icon.downloadSave { background-image: url(../images/downloadSave.png); }
+.palm-menu-icon.playAll { background-image: url(../images/playAll.png); }
+.palm-menu-icon.musicNote { background-image: url(../images/song32x64px.png); }
+.palm-menu-icon.playAll { background-image: url(../images/playAll.png); }
+.palm-menu-icon.listNowPlaying { background-image: url(../images/listNowPlaying.png); }
+.palm-menu-icon.nowPlaying { background-image: url(../images/nowPlaying.png); }
+.palm-menu-icon.home { background-image: url(../images/home.png); }
+.palm-menu-icon.addNowPlaying { background-image: url(../images/addNowPlaying.png); }
+.palm-menu-icon.scrollToNow { background-image: url(../images/scrollToNow.png); }
+.palm-menu-icon.menu { background-image: url(../images/eclipse_arrow_gloss.png); background-repeat: no-repeat; background-position: center;}
+.smallText {font-size:small;}
+.smallTextTap {font-size:small;
+}
+.mediumText {
+	font-size:medium;
+	}
+.xsmallText {
+	font-size:x-small;
+	}
+.xsmallText right{
+	font-size:x-small;
+  	float: right;
+  	right:10px
+	}	
+.largeText{
+	font-size:large;
+	overflow:hidden;
+	white-space:nowrap;
+	}
+.largeTextBold{
+	font-size:large;
+	overflow:hidden;
+	white-space:nowrap;
+	font-weight:bold;
+	}
+.tblTextField {
+	table-layout:fixed;
+	 }
+.tbl {
+	table-layout:fixed;
+	border-collapse:collapse;
+	 }
+.tbl td {
+	padding: 0px 0px;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:x-small;
+ }
+.tbl2 {
+	table-layout:fixed;
+	border-collapse:collapse;
+	 }
+.tbl2 td {
+	padding: 0px 0px;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:small;
+ }
+.tblTextField {
+	table-layout:fixed;
+	border-collapse:collapse;
+	 }
+.tblTextField td {
+	padding: 0px 0px;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:small;
+ }
+.tblLargeText {
+	table-layout:fixed;
+	border-collapse:collapse;
+	 }
+.tblLargeText td {
+	padding: 0px 0px;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:large;
+ }
+.pill {
+  line-height: 48px;
+  height: 50px;
+  z-index: 20000;
+  position: fixed;
+  top: 1px;
+  left: 0px;
+  right: 0px;
+  border-width: 0 25px 0 25px;
+  padding: 0px;
+  font-weight: bold;
+}
+.playList {
+  line-height: 60px;
+  height: 360px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  border-width: 0 25px 0 25px;
+  padding: 0px;
+}
+.searchResults {
+  line-height: 60px;
+  height: 280px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+}
+.mySpacer {height: 5px}
+.myHeaderSpacer {height: 44px}
+.myHeaderSpacerMenuSearch {height: 42px}
+.searchSpacer {height: 10px}
+.listButton {
+	position:relative;
+	top:-6px;
+	display:block;
+	height: 52px;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;             
+	text-transform: capitalize;
+	line-height: 52px;
+	background: none;
+
+	font-weight:bold;
+	font-size: 14px;
+
+	color: #fff;
+	border-width: 0 17px;
+	background-image: url(../images/palm-button-light.png);
+	background-repeat: no-repeat; 
+	background-position: right;
+}
+#wrapper{
+	border-color:white;
+}
+.searchBox {
+	background:url(../images/search-button.png);
+	height:42px;
+	background-repeat: no-repeat; 
+	background-position: right;
+	border-width:0px 35px 0px 0px;
+	position:relative;
+}
+.homeList {
+  line-height: 20px;
+  height: 345px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-width: 0 10px 0 10px;
+  padding: 0px;
+}
+.padRight {
+  left: 10px;
+}

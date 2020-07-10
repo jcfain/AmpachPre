@@ -1,0 +1,456 @@
+
+<div class="prefs-background palm-dark" >
+<div id=sceneContent>	
+<div id='scrimSpinner' class="palm-scrim" style="display:none;"><center><div id="spinner" x-mojo-element="Spinner"></div></center></div>
+<div style="
+-webkit-border-radius: 20px;
+border: 2px 
+solid #fff;
+padding: 5px;" >
+<div class="myHeaderSpacer"></div>
+		<div class="palm-header">
+			<center>Account</center>
+		</div>
+<!--<div class="palm-row-wrapper" align=right>
+    	<div x-mojo-element="ListSelector" id="account"></div>
+</div>	-->
+<!-- Server Address -->
+<div x-mojo-element="Scroller" id="scrollerId" style="height: 320px;">
+<div class="palm-list">
+		<div class=xsmallText align=center>Scroll down for more options</div>
+	
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+		<div>Account Name</div>
+</div>	
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			     		<div id='accountName' x-mojo-element="TextField"></div>		
+					</div>
+				</div>	
+			</div>
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Ampache Username</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			     		<div id='username' x-mojo-element="TextField"></div>		
+					</div>
+				</div>	
+			</div>	
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">		
+	<div>Ampache Password</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			     		<div id='password' x-mojo-element="PasswordField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>	
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">		
+	<div>Ampache Server Address</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			     		<div id='address' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">		
+	<div>Ampache Directory Root</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='directory' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;"">		
+	<div>Connection Port</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			     		<div id='connectionPort' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>	
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Streaming Port</div>
+</div>
+		<div class="listDivider">	
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='port' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>	
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Download Directory</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='path' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div># of songs to fetch for random play</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='randomFetch' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Keep Alive</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='pingInterval' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>				
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Refresh Login</div>
+
+</div>
+
+<table width=100% cellpadding="0" cellspacing="0" border=0 class=tblTextField>
+	<tr>
+		<td width=50%>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='reLogInterval' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+		</td>
+		<td width=50%>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='reLogIntervalMin' class=textFieldHalf x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class=xsmallText align=center>Hours</div>
+		</td>
+		<td>
+			<div class=xsmallText align=center>Minutes</div>
+		</td>
+	</tr>
+</table>
+
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">		
+	<div>Buffer Percentage</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			     		<div id='bufferPercentage' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>	
+<div class="listDivider">		
+<table width=100% cellpadding="0" cellspacing="0" border=0>
+	<tr>
+		<td><div align='left' class=mediumText>Use SSL (https://)</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="protocol"></div></td>
+	</tr>
+	<tr>	
+		<td><div align='left' class=mediumText>Stream Notifications</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="notifications"></div></td>
+	</tr>
+	<tr>	
+		<td><div align='left' class=mediumText>Bluetooth Controls</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="btC"></div></td>
+	</tr>
+	<tr>	
+		<td><div align='left' class=mediumText>Head Phone Controls</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="hpC"></div></td>
+	</tr>
+	<tr>	
+		<td><div align='left' class=mediumText>Default Wifi</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="wifi"></div></td>
+	</tr>
+	<tr>	
+		<td><div align='left' class=mediumText>Dashboard</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="dashboard"></div></td>
+	</tr>			
+</table>
+</div>
+<div id='ssidField'>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">	
+	<div align=center>Default SSID</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='ssid' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id=lastFm>
+	<div align=center><img src='images/last_fm_logo_small.jpg'></img></div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='lastfmUN' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='lastfmPW' x-mojo-element="PasswordField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<div id=scrobble>
+<table width=100% cellpadding="0" cellspacing="0" border=0>
+	<tr>	
+		<td><div align='left' class=mediumText>Scrobble by Default</div></td>
+		<td><div align='right' x-mojo-element="ToggleButton" id="lastFmScrobble"></div></td>
+	</tr>
+</table>	
+</div>
+<!--<button class="palm-button affirmative" id="save">Save</button>-->
+<!--<button class="palm-button negative" id="info">Delete Account</button>-->
+
+<div class="listDivider">
+	<div align=center><img src='images/theme.png'></img></div>
+</div>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+<div>Background</div>
+</div>
+<table width="100%" cellpadding="0" cellspacing="1" class='tbl'>
+<tr>
+	<td align="left" width='85%'>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='backgroundImage'>Tap to Select</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</td>
+	<td align="right" width='15%'>
+		<div id=icon></div>
+	</td>
+</tr>
+</table>
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+<div>Now Playing Background</div>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+	<td align="left" width='85%'>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='backgroundImageNP'>Tap to Select</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</td>
+	<td align="right" width='15%'>
+		<div id=iconNP></div>
+	</td>
+</tr>
+</table>
+
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Text Color</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='textColor' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div style="
+border: 1px 
+solid #fff;
+padding: 3px;
+background-color: gray;
+color: black;
+font-size: large;">
+	<div>Now Playing Text Color</div>
+</div>
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='textColorNP' x-mojo-element="TextField"></div>		
+					</div>
+				</div>
+			</div>
+		</div>			
+
+		<div class="listDivider">
+			<div class="palm-row single">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			      		<div id='resetImages'>Reset theme to Default</div>		
+					</div>
+				</div>
+			</div>
+		</div>				
+</div>
+</div>
+</div>
+</div>
+</div>

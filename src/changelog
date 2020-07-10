@@ -1,0 +1,292 @@
+1.0.1
+added support for multiple accounts
+
+1.0.2
+fixed login timestamp
+
+1.5.0
+Added album play list and a custom play list builder.
+Added a custom Streaming interface.
+Added option to play with the Pre's built in media streamer or AmpachPres streamer for those who enabled downloads in the browser.
+(Play lists will NOT work with the Pre's web streamer)
+Cleaned up the account interface.
+Added command menus on each scene for easier navigation.
+Took out album art on album search for faster rendering.
+
+1.5.1
+Added some error reporting for non mp3 files.
+Added the mime type to the songs scene.
+fixed a few small bugs.
+Left in the video scene in case someone can get mp4's to show up in the search.
+
+1.5.5
+Added different play modes. repeat, repeat all and shuffle
+Changed account/login system. (It is recommended you re-enter your account info so you can name your accounts.)
+Ampachpre has a new look. Let me know what ya think.
+fixed a number of other bugs and optimized code a little bit.
+
+1.5.6
+Added album of the moment
+moved all eventlisteners to the activate and deactivate functions. (should improve performance)
+removed type from the songs list. no need for this really if you have transcoding on.
+changed the backdrop and icon once again. Sorry I wasn't happy with the others.
+
+1.5.7
+Formated the Time in the Songs list Play list and Now Playing finally.
+Added a timer to the now playing scene.
+Added error reporting to a few of the play back errors.
+Fixed a bug that would crash AmpachPre on back gesture at the search scene.
+Tweaked the random play algorithm a little.
+Changed the style of the search field. 
+Enter or on text property change now submits a search. (working on getting just enter to submit)
+Created a ping event which should keep the session alive longer.
+on the search scene, just start typing to bring the search field into focus.
+Any key press on the now playing scene will pause/play the audio.
+A few changes here and there to styles.
+fixed a bug with the account editor. Thanks imekul.
+
+1.5.8
+Playlist editor Changes:
+	Added "swipe to playlist" in the songs/albums/artists scenes.
+		Instead of tapping to add to playlist just swipe it off the screen and watch it/them magically appear in the playlist :)
+		Swipe an entire collection by artist, artist album or individual songs!!
+	Added swipe to delete in playlist scene
+	Added drag to reorder playlist item
+	Added total playlist runtime
+	removed selection confirmation on songs scenes. 
+		Swipe to add to playlist, tap to play from selection through the rest of the album.
+fixed search songs not formatting time.
+
+1.5.9
+Added ability to skip songs by flick or command.
+		if the currently playing track is 10 seconds or less into the song the previous command or right flick will go back one track.
+		if the song currently playing is greater then 10 seconds the current track will restart.
+		set a 2 second pause between skips so the server has less chance of getting overloaded with connections of multiple skips.
+The playmode and play command menu is now disabled between all track switches.
+Added wired headset controls
+		single click plays/pauses
+		double click skips to next song
+		hold for 4 seconds for previous song or restart current track.
+Added bluetooth controls
+		Play and pause do the same thing. One hit will pause, another hit will play.
+		(this is how my car stereo works and I have no other testing gear.)
+		Added controls for stop next and prev(my stereo has no stop, so if you can test this I would appreciate it :)
+Moved the track info. aka time, duration, artist name and track number.
+
+1.6.1
+made artist search return only the artist searched on albums with multiple artists
+	search album to get soundtracks and multi-compilation albums.
+made skip choose a random song if you are in random mode. thanks angist
+fixed a bug that caused error decode while loading the song.
+fixed a bug that crashed ampachpre on back gesture from the stream scene before the song started playing.
+Worked on the list styles a little bit.
+
+1.7.0
+
+New Download manager added!
+	Now you can download a entire playlist to the pre and listen while your roaming :)
+	Full downloaded filemanager and playlist editor.
+		Create multiple download playlists
+		Delete files that that you have downloaded.
+		You can also re-arange the downloaded files playlist.
+		or delete the play list and leave the files on the pre.
+		custom download folder under /media/internal/ (look in the account settings)
+		songs download in to sub folders under /artist/album/tracknum-songTitle.mp3 format
+		album art is in the same folder.
+		Enter a custom url to a mp3 from a site such as beemp3.com for your downloading pleasures
+		
+Pre-buffering is in! (no pun intended)
+	It's not "true" pre-buffering, but it works. What I mean by not true pre buffering is. If you have a short song
+	and a long song after the short one. the long one will probably need to buffer but the next one should be buffered
+	and ready to go. unless you skip it of course.
+	note: pre-buffering is not working in random mode yet.
+	
+Now, in the account editor, you will now be able to edit your account when selected instead of re-entering everything.
+Changed the icon to a 3d style.(you'll have to delete and reinstall to refresh the Icon I believe)
+
+1.7.1
+Added some log in error reporting
+made the stream scene progress bar show buffering of current song and pre buffering of next song.
+fixed a bug that caused the now playing playlist to exede the actual playlist length.
+changed the position of the duration and current time in the stream scene.
+when listening to downloads the stream scene will not try to buffer the next song.
+
+1.7.6
+Added bookmarks, now you can book mark a album or a artist. Songs are on the agenda.
+Changed the login algorithm to use palms api in stead of javascripts date method, no user visible changes but much cleaner now.
+added ssl support (https://)
+removed webStreamer option. No real use for it since you can download songs now.
+enter now submits a search. text property change will not any more.
+A complete overhaul of the account system. It now allows as many accounts as you need.
+The account at the top of the list is the default. just drag another account to the top to make it the default
+swipe to delete accounts. Tap the icon to edit that account.
+		IMPORTANT!!! delete all your old ampachpre accounts before upgrading to 1.7.5. or they will be left in your memory. 
+		If you delete ampachpre you will lose the database that holds your downloaded music playlist. 
+		the mp3z will still be on your phone but just not available with in ampachpre.
+Downloaded songs can now be added to custom playlist.
+You can now edit a downloaded songs info.
+
+1.7.7
+Added a toggle switch for "Cache Next Song" in the account settings.
+	by default "Cache Next Song" is on. If you want it turned off, and you already made the account prior to the update 
+	you will need to visit the account settings turn "Cache Next Song" ON and back OFF, then save.
+changed the style on bookmarks list and account info list.
+fixed a bug the stopped playlist progressing to the next song when download was canceled.
+fixed a bug that displayed the total playlist time incorrectly.
+Removed the bluetooth and headset error dialogs.
+
+1.7.8 Wednesday, November 18 2009
+caching now works on random
+added a try again on login timeout dialog.
+increased the login timeout to 20 secs
+added a try again on media error abort dialog.
+fixed random play repeating the same song.
+changed the way playmode is set in the underlying system.
+added text for what pre-cache is doing.
+There are now two ways to add to your custom playlist. 
+		1. by swiping the album/artist or song off the screen. (except on downloads)
+		2. by using the icon to the right of the title.
+added a spinner after adding a album or artist to the custom playlist for ajax status.
+
+1.7.9 Wednesday, December 02 2009
+Added search buttons to the url download scene.
+	now you can search beemp3 for artist, album or song directly from AmpachPre
+	after you enter the album and artist search google images for a album art image.
+A lot of work went into random play. The over all random play experience should be better now.
+Random play should not repeat any songs now.
+Added skip ahead 10 secs and skip back 10 sec commands
+Moved the commands on now playing screen
+Added next track status.
+Play mode is now selected via a pop up menu. I hated cycling through play modes
+Tap the artist name in now playing scene to search wikipedia for artist info.
+pre-caching will now cache multiple tracks ahead if the next song is less than 1.2Mb
+fixed various bugs here and there as always.
+
+1.8.0 Friday, December 16 2009
+IMPORTANT! before upgrading to 1.8... If you have any downloads you would like to keep listed in ampachpre, 
+back up your database. (how to below) Then delete ampachpre and install 1.8. 
+If you are not worried about keeping the downloads listed in ampachpre just go ahead and delete ampachpre.
+All downloaded files will be left on your usb partition.
+
+Save play list feature added
+	the play list save scene acts mostly like the downloads scene.
+	make a play list and click the multiple list icon to create a new playlist container to save your playlist.
+bookmark songs added.
+new ampachpre theme now with more icons.
+fixed downloads hanging on art file if account type is https://
+In order to get saved playlists to work I had to re-design the account system.
+	there is now a few new fields
+	streaming port: this is the http:// port you use if you are using ssl and it is not port 80 if it is port 80 just leave it blank
+	connection port: same as above but for all encrypted transactions.
+	the address field is now just the domain name
+	the directory field is for the path ampache resides in.
+downloads now save into a directory of the playlist name. /media/internal/yourPersonalPath/playlistName/artist/album/song.mp3
+a notification presents the song  and artist that is now playing if the app is minimized or the phone is asleep.
+there is a option to turn notifications off as well.
+re-designed Albums of the moment.
+	now a palm list and I have increased performance by like 500% (i dont really know the increased performance but its way better)
+	the album list is now cached after the initial toggle. to refresh the albums of the moment cache simply login again.
+
+How-to back up your AmpachPre database:
+
+1. Before deleting AmpachPre, plug in your phone to a pc usb port and hit "Usb Drive". Or you can use sftp/ssh what ever you please.
+2. Navigate to ".app-storage/file_.var.usr.palm.applications.net.nucleardecay.ampachpre_0"
+3. There should be a file in there named "00000000000000xx.db" where xx can be any two hexidecimal digits.
+4. Copy this file to a safe place say your Desktop.
+5. Now you can eject/unmount your phone and delete AmpachPre by Orange+Tap.
+6. Reinstall Ampachpre and wait for the account screen to come up.
+7. Put your phone back into usb mode and navigate to ".app-storage/file_.var.usr.palm.applications.net.nucleardecay.ampachpre_0" again.
+8. Note the name of the new "00000000000000xx.db" file in that directory, xx should be increased by 1.
+9. Rename the file on your desktop to that of the new file then copy the old one into ".app-storage/file_.var.usr.palm.applications.net.nucleardecay.ampachpre_0" 
+over writing the new smaller file.
+10. restart AmpachPre and your data base should be there.
+
+Note: for this install I moved the account system to the database so from now on this procedure will keep all accounts. This time only you will
+need to enter your account info again.
+
+
+1.8.1
+improved the stream timer
+fixed format of notification.
+fixed album of the moment not turning off if not fully loaded.
+when switched to random play, the next random song will start caching if the current song has fully loaded.
+increased size limit of "cache 2 tracks ahead" to 2.5mb
+added "To Top" and "To Bottom" to playlist, download and savedPlaylist editors
+fixed a typo in the streams cleanup function.
+phone should stay awake for at the max 15 mins or until all downloads are complete.
+fixed display not updateing after adding a url.
+a notification has been added when all downloads are complete if the stage is deactivated.
+
+1.8.2
+fixed randomplay selection hanging
+fixed to top and to bottom not executing on downloads scene.
+improved the login error reporting a little.
+added a search all button to url add scene.
+you can now listen to the download playlist as you are downloading or adding to it.
+	(random play is not supported in this)
+
+1.8.3
+more login error reporting changes
+added a no response dialog.
+optimized a few things in the login algorithm
+better error checking in account creation.
+make a playlist and switch accounts then try to download that playlist it will work now.
+added notification on completed "add to playlist".
+redesigned settings manager.
+changed a few styles on search scene and now playing
+
+1.8.6
+It is strongly recommended you delete and remake your accounts just keep every thing clean, at least re-save your account to keep variables from being null!
+if you have problems just remake the account.
+
+also I am very sorry but I found a bug that needs to be fixed and for that to be done you will need to make any saved playlists again. 
+	The bug was when you create a playlist with the same name as a downloaded playlist name Ampachpre would fill that playlist with your downloaded playlist.
+	causing you to not be able to delete the saved playlist without deleting the database that held the downloaded playlist. 
+	this is kind of ironic because i just spent about a hr. on makeing a big playlist tonight.
+	the good news is downloads will not be affected :D
+	
+added a wifi check if you are on wifi it will auto log you into the account you specify as default wifi.
+added a ssid field; you need to specify your home ssid incase you are on a wifi somewhere other than the place your server is at.
+	this should not affect your account if you choose not to use this option. 
+new auto account change feature. If you in any scene and you turn on wifi or vice versa, or if you just got out of the range of your router or if your wan ip has changed.
+AmpachPre will now auto login to either your default wifi or evdo account. (still experimental while streaming.)
+last fm scrobbling now native. You need to disable scrobbling in Ampache if you want to use this feature. If you dont, just leave the account info blank.
+if you choose to use this you will be able to turn scrobbling Off/On by default or toggle it from the app menu on the stream scene.
+ad all to playlist on a downloaded playlist added.
+if you have a song that has been downloaded from a url and there is no time in the playlist. It will be added the first time you play it.
+this fixes a bug that caused the playlist scene from not displaying total playlist time when these files where added to the playlist.
+there has been a ping timer to keep the api Session alive added that is customizable. Still working on the stream session. 
+added a search time out if the search takes longer than 30 seconds the search will be canceled.
+added the ability to edit playlist song info for scrobbling songs with bad tags and for those like me who just do not have time to go through thier entire mp3 collection looking for bad tags. 
+	(I strongly recommend not editing either the image url nor the song url! I was going to disable these but you could enter a full path to a local mp3 and image file if you know the values. Remote mp3z are unsupported right now.)
+added a download saved playlist function in case you need it quick.
+
+1.8.7
+fixed a problem with the last.fm login system.
+now when you toggle scrobbling on while listening it will send the now playing song.
+
+1.8.8
+fixed a few bugs with the autologin feature.
+fixed a problem with the toggle scrobble function.
+the scrobble function will now cache listened songs while there is no internet connection and scrobble them the next time there is a internet connection.
+the stream scene will now cache the next songs album art for faster leading.
+
+1.8.9
+
+Added a Universal search all catagory. 
+If you search "All" with a empty search field, you will be given a option to browse by artist, album or songs. (note: i have 15000+ songs, browse songs crashes Ampachpre for me.)
+Added a boolean option to search incase you know exactly what you want.
+you can now rename saved playlists(this should update any pre 1.8.3 playlists that where not deleted before upgrading. Just change the name and save)
+now if you listen to more than half a song or the song has elapsed 260 seconds and you skip or close stream scene. The song will be scrobbled. (note: it doesnt look like there is enough time to scrobble if you just close the app while playing)
+added options for turning on/off bluetooth and headphone controls.
+added version/account settings checker, now is any settings are updated with a new version, ampachpre will auto set them to the default value and tell you whats new.
+changed the style of the account scene.
+fixed a bug where if you left the ping interval field blank the account would not save.
+updated the google image search url
+now if the last fm handshake fails all songs listened will be cached till you are logged in to last.fm again
+added a cancel button to a search.
+improved many styles of each scene
+added icons for albums, artists and songs.
+added play all to albums, artists, and songs scenes.
+if you have multiple songs book marked, ampachpre will pull all the songs and make a playlist out of them.
+added a refresh login interval to keep the stream session alive. This will not fire if there is a song streaming or downloading
